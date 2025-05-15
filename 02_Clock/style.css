@@ -35,10 +35,32 @@
       transform: translateY(-3px); /* account for the height of the clock hands */
     }
 
-    .hand {
-      width: 50%;
-      height: 6px;
-      background: black;
-      position: absolute;
-      top: 50%;
-    }
+.hand {
+  width: 50%;
+  height: 6px;
+  background: black;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: rotate(-90deg);
+  transform-origin: left;
+  transition: all 0.05s;
+  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+}
+
+.hour-hand {
+  width: 25%; /* shortest */
+
+  background: black;
+}
+
+.min-hand {
+  width: 35%; /* medium */
+
+  background: black;
+}
+
+.second-hand {
+  width: 45%; /* longest */
+  background: red;
+}
