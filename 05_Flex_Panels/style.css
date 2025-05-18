@@ -1,0 +1,97 @@
+:root{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.gallery-container{
+background-color: rgb(252 211 77);
+height: 800px;
+width: 1300px;
+border-radius: 10px;
+display: flex;
+}
+
+.panel{
+    background-color: rgb(156 163 175);
+    flex: 1;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+p{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.panel1{
+    background: url("https://images.unsplash.com/photo-1622979857654-9363bb0a1243?q=80&w=1874&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D");
+    background-position: center;
+    filter: grayscale();
+}
+
+.panel2{
+   background: url("https://images.unsplash.com/photo-1609726866022-1ce719b4727b?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); 
+   background-position: right;
+   background-size: cover;
+  filter: grayscale();
+}
+
+.panel3{
+   background: url("https://images.unsplash.com/photo-1590599652694-4179dbc13a54?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); 
+   background-position: center;
+   background-size: cover;
+filter: grayscale();
+}
+
+.panel4{
+   background: url("https://images.unsplash.com/photo-1610561870937-c51dcf9dd314?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); 
+   background-position: center;
+   background-size: cover;
+  filter: grayscale();
+}
+.panel5{
+   background: url("https://images.unsplash.com/photo-1631492430897-d1d96f4e41a5?q=80&w=1936&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"); 
+   background-position: center;
+   background-size: cover;
+   filter: grayscale();
+}
+
+.word, .sentence{
+    color: white;
+    z-index: 1;}
+
+.sentence{
+    font-size: 40px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.word{
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.darken{
+    background-color: black;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    opacity: 50%;
+    z-index: 0;
+}
