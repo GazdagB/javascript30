@@ -21,6 +21,9 @@ display: flex;
     display: flex;
     flex-direction: column;
     position: relative;
+    transition: 
+    font-size 0.7s cubic-bezier(0.61,-0.19,0.7,-0.11),
+    flex 0.7s  cubic-bezier(0.61,-0.19,0.7,-0.11);
 }
 
 body{
@@ -95,3 +98,16 @@ filter: grayscale();
     opacity: 50%;
     z-index: 0;
 }
+
+.panel.open {
+    flex: 5;
+    font-size: 60px;
+}
+
+.panel > *:first-child {transform: translateY(-100%);}
+
+.panel > *:nth-child(3) {transform: translateY(100%);}
+
+.panel.open-active > *:first-child { transform: translateY(0); }
+
+.panel.open-active > *:nth-child(3) { transform: translateY(0); }
